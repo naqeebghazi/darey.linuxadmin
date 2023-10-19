@@ -29,5 +29,5 @@ The location of binaries can be found using the which command:
 
 ![lsinUsr_bin](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/whichbinaries.png?raw=true)
 
-A binary : Is a file that is not human readable. It is a compiled version of the program written by programmers
+A binary : Is a file that is not human readable. Stored in the /usr/bin folder. It is a compiled version of the program written by programmers
 
