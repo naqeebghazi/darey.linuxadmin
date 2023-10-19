@@ -39,3 +39,14 @@ The SSH key key informsation is held in the shh folder
 
 ![ssh_home](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/ssh_home.png?raw=true)
 
+To generate a new ssh key pair:
+
+  $ ssh-keygen
+
+Linux will suggest a default location or you can specify your own. 
+Passwords are optionals, no passwords = Passwordless-SSH. Avoid passwords unless necessary.
+
+![ssh-keygen](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/ssh-keygen.png?raw=true)
+
+
+
