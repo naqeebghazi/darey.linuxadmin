@@ -22,7 +22,7 @@ The ls *ls* command lists all the objects (folders, files etc) within a director
 
 bin folder: stores all binary files and is linked to every users' binaries
 
-![tree-L1]()
+![tree-L1](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/tree-L1.png?raw=true)
 
 The commands that you use to interact with Linux are all stored as binaries in the bin folder. e.g. *ls* 
 The location of binaries can be found using the which command:
