@@ -36,3 +36,6 @@ A binary : Is a file that is not human readable. Stored in the /usr/bin folder. 
 
 This is a secure way of connecting to a remote machine. It requires TWO keys (i.e. a pair), one public and one private. This is akin to a loack that everyone can see (public key) and only one person has the key required to open the lock (private key). 
 The SSH key key informsation is held in the shh folder 
+
+![ssh_home](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/ssh_home.png?raw=true)
+
