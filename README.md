@@ -64,4 +64,12 @@ The .ssh directory in the remote client will look like this:
     
 
 When you have the client and the remote computers during an SSH connection, you must have these details learned:
-- A
+- Send the public key from the local to the remote client. The contents of the public key are not a security concern.
+- ssh-copy-id -i /home/.ssh/id_rsa.pub ec2user@32.54.33.13
+- Now you will have the public key on the remote host and the private key on the local host
+- -NOw just ss from your local to your remote host:
+    $ ssh ec2user@32.54.33.13
+You should now have connectivity.
+As long as a client has the public key, you will be able to connect using the corresponding private key.
+
+
