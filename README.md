@@ -48,5 +48,21 @@ Passwords are optionals, no passwords = Passwordless-SSH. Avoid passwords unless
 
 ![ssh-keygen](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/ssh-keygen.png?raw=true)
 
+The keys will be stored in ~/.ssh folder as the following:
 
+  ~/.ssh/id_rsa.pub
+  ~/.ssh/id_rsa
 
+One is a publc key (pub) and the other is the private key. The public key is much shorter in length thatn the private key which is many lines long. 
+The public key stored on your local client will need to be copied over to your remote client. Before this is done, ensure the openssh server is running on the remote client. The openssh-server is required to listen for ssh connections on port 22. It will usually come installed for cloud VMs but in case it isnt, run the following command on the remote client:
+
+  $ sudo apt install openssh-server -y
+
+The .ssh directory in the remote client will look like this:
+
+  
+
+    
+
+When you have the client and the remote computers during an SSH connection, you must have these details learned:
+- A
