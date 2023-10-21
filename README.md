@@ -60,8 +60,7 @@ The public key stored on your local client will need to be copied over to your r
 
 The .ssh directory in the remote client will look like this:
 
-  
-
+![images](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sshonRemoteClient.png?raw=true)
     
 
 When you have the client and the remote computers during an SSH connection, you must have these details learned:
