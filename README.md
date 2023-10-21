@@ -72,4 +72,22 @@ When you have the client and the remote computers during an SSH connection, you 
 You should now have connectivity.
 As long as a client has the public key, you will be able to connect using the corresponding private key.
 
+f you need to troubleshoot connectivity:
+- add flag -v to ssh command. Level of verbosity depends on number of v (e.g. -vv, -vvv).
+- to know what the remote client is receiving, enter this into the remote client terminal:
 
+    $ sudo tail -f /var/log/auth.log
+
+ This will now show a live feed log of authentications into thr remote client. Then go back to host client and in a new terminal type:
+
+    $ ssh ec2user@32.54.33.13 -vvv
+
+  The local host will give an out like this:
+
+  ![verboseSSH]()
+
+  While the remote host will show similar to this in the auth.log file feed:
+
+  ![sshTAILlog]()
+
+  
