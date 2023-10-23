@@ -112,11 +112,13 @@ f you need to troubleshoot connectivity:
 
   Then add the user under the root user while copying all the roots uers privileges:
 
-  ![sudoVIMuser](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
+![sudoVIMuser](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
 
 To test that this config file is correct:
 
   $ sudo visudo -c
+
+![visudo](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/visudo.png?raw=true)
   
   ### How do we disable root access completely?
   - Prevent a root user from connecting remotely.
