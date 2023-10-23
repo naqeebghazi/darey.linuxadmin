@@ -124,7 +124,16 @@ if it reads "parsed ok" then your configuration is functional.
 You can test this by logging into the relevant user and tyoing the ls command. If a list appears, sudoes has been successful. If permission denied appears, you must prompt sudo before running the other command as user 1, like this:
 
 ![suSudo](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/suSudo1.png?raw=true)
+
+To modify the sudo permissions for groups, open the /etc/sudoers file again and make the changes as follows by adding a new group:
+
+![editSudoersdevopsgrp](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/editSudoersdevopsgrp.png?raw=true)
+
+The add User1 to the new group and test the updated sudoers file:
+
+![visudoGrpadd](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/visudoGrpadd.png?raw=true)
   
   ### How do we disable root access completely?
   - Prevent a root user from connecting remotely.
+
 
