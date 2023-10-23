@@ -90,4 +90,4 @@ f you need to troubleshoot connectivity:
 
   ![sshTAILlog]()
 
-  
+  If the connection authentication wasnt accepted, the auth.log file will give details as to why. 
