@@ -99,12 +99,21 @@ f you need to troubleshoot connectivity:
 
   Create a user:
 
-  $ sudo useradd -m user1      # creates user, -m flag creates a home directory for the user
-  $ sudo passwd user1          # sets passwword for new user
-  $ sudo su user1              # switch to log in as the new user1
-  $ id                         # to confirm identity of current user
+    $ sudo useradd -m user1      # creates user, -m flag creates a home directory for the user
+    $ sudo passwd user1          # sets passwword for new user
+    $ sudo su user1              # switch to log in as the new user1
+    $ id                         # to confirm identity of current user
 
 ![useradd_passwd_su](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/useradd_passwd_su.png?raw=true)
+
+  New users do not have root permissions by default. You can alter these in the /etc/sudoers file:
+
+    $ sudo vim /etc/sudoers
+
+  Then add the user under the root user while copying all the roots uers privileges:
+
+  ![sudoVIMuser])(https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
+
 
   ### How do we disable root access completely?
   - Prevent a root user from connecting remotely.
