@@ -132,8 +132,28 @@ To modify the sudo permissions for groups, open the /etc/sudoers file again and 
 The add User1 to the new group and test the updated sudoers file:
 
 ![visudoGrpadd](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/visudoGrpadd.png?raw=true)
+
+Then when you switch to user1, you will see the following as user1 is part of the group 'devops'
   
-  ### How do we disable root access completely?
-  - Prevent a root user from connecting remotely.
+  ### How do control root user remote access
+
+  We need to modify the file:
+  $ ls -al /etc/ssh/sshd_config
+  $ sudo vim /etc/ssh/sshd_config
+
+  Then search for (using / once in the vim editor) 'PermitRootLogin'.
+  Then, in insert mode, remove the comment hashtag, thus enabling that line. Then either type 'no' or 'without-password'
+    - no : no root login allowed to this server
+    - without-password : root login only with private key
+
+![sshd_withoutpassword](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sshd_withoutpassword.png?raw=true)
+  
+Then test the file:
+
+$ sudo sshd -t
+
+Nothing returned = Syntax OK
+
+![sudosshd-t](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sshd-t.png?raw=true)
 
 
