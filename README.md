@@ -150,10 +150,14 @@ Then when you switch to user1, you will see the following as user1 is part of th
   
 Then test the file:
 
-$ sudo sshd -t
+  $ sudo sshd -t
 
 Nothing returned = Syntax OK
 
 ![sudosshd-t](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sshd-t.png?raw=true)
 
+Then check the status of the ssh server:
 
+  $ systemctl status sshd
+
+![systemctlSSHD](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/systemctlSSHD.png?raw=true)
