@@ -104,7 +104,7 @@ f you need to troubleshoot connectivity:
     $ sudo su user1              # switch to log in as the new user1
     $ id                         # to confirm identity of current user
 
-![useradd_passwd_su](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/useradd_passwd_su.png?raw=true)
+![useradd_passwd_su](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
 
   New users do not have root permissions by default. You can alter these in the /etc/sudoers file:
 
