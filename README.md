@@ -119,6 +119,11 @@ To test that this config file is correct:
   $ sudo visudo -c
 
 ![visudo](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/visudo.png?raw=true)
+
+if it reads "parsed ok" then your configuration is functional. 
+You can test this by logging into the relevant user and tyoing the ls command. If a list appears, sudoes has been successful. If permission denied appears, you must prompt sudo before running the other command as user 1, like this:
+
+![suSudo](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/suSudo.png?raw=true)
   
   ### How do we disable root access completely?
   - Prevent a root user from connecting remotely.
