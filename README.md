@@ -104,7 +104,8 @@ f you need to troubleshoot connectivity:
   $ sudo su user1              # switch to log in as the new user1
   $ id                         # to confirm identity of current user
 
-
+![useradd_passwd](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/useradd_passwd.png?raw=true)
 
   ### How do we disable root access completely?
-  - Prevent a root user from connecting remotely. 
+  - Prevent a root user from connecting remotely.
+
