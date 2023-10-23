@@ -84,10 +84,27 @@ f you need to troubleshoot connectivity:
 
   The local host will give an out like this:
 
-  ![verboseSSH]()
+  ![verboseSSH](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sshVerboselocalhost.png?raw=true)
 
   While the remote host will show similar to this in the auth.log file feed:
 
-  ![sshTAILlog]()
+  ![sshTAILlog](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sshTAILlog.png?raw=true)
 
   If the connection authentication wasnt accepted, the auth.log file will give details as to why. 
+
+
+  ## SSHD Configuration files
+
+  ### How do we enable/disable a user to use sudo?
+
+  Create a user:
+
+  $ sudo useradd -m user1      # creates user, -m flag creates a home directory for the user
+  $ sudo passwd user1          # sets passwword for new user
+  $ sudo su user1              # switch to log in as the new user1
+  $ id                         # to confirm identity of current user
+
+
+
+  ### How do we disable root access completely?
+  - Prevent a root user from connecting remotely. 
