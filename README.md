@@ -114,7 +114,10 @@ f you need to troubleshoot connectivity:
 
   ![sudoVIMuser](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
 
+To test that this config file is correct:
 
+  $ sudo visudo -c
+  
   ### How do we disable root access completely?
   - Prevent a root user from connecting remotely.
 
