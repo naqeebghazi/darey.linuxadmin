@@ -167,6 +167,8 @@ Then check the status of the ssh server:
 
 Using SFTP or SCP
 
+### To Upload
+
 On the remote client, do this:
 
   $ sudo mkdir -p /var/www/html
@@ -189,3 +191,21 @@ Then once you have sftp'd into the remote server, navigate to the folder you cre
   $ put -r directoryname
 
 This will upload all the files.
+
+### To Download
+
+Go to directory in remote host from local host:
+
+  $ sftp user1@ipaddress-of-remote
+  $ cd /var/www/html/directoryname
+  $ get -r directoryname
+
+### SCP
+
+Cannot run commands like in sftp. Run this in host:
+
+  $ scp -r directoryname/ user1@ipaddress:tmp 
+
+Check this folder in remote client:
+
+  $ ls -al /tmp/directoryname
