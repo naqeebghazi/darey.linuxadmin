@@ -161,3 +161,31 @@ Then check the status of the ssh server:
   $ systemctl status sshd
 
 ![systemctlSSHD](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/systemctlSSHD.png?raw=true)
+
+
+## SFTP: Securely uploading/downloading files remotely
+
+Using SFTP or SCP
+
+On the remote client, do this:
+
+  $ sudo mkdir -p /var/www/html
+
+This will be the destination for files from other clients. You also need to know the hostname so the local host can send to the correct dest:
+
+  $ hostname -i
+
+![hostnameIP]()  
+
+On the local client:
+
+  $ sftp user1@ipaddress-of-remote
+
+sftp essentially allows you to login to the remote server and execute many commands. 
+Then once you have sftp'd into the remote server, navigate to the folder you created in the remote host:
+
+  $ cd /var/www/html/directoryname
+  $ sudo chown user1:admin /var/www/html/directoryname
+  $ put -r directoryname
+
+This will upload all the files.
