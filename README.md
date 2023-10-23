@@ -112,7 +112,7 @@ f you need to troubleshoot connectivity:
 
   Then add the user under the root user while copying all the roots uers privileges:
 
-  ![sudoVIMuser])(https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
+  ![sudoVIMuser](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/sudoVIMuser.png?raw=true)
 
 
   ### How do we disable root access completely?
