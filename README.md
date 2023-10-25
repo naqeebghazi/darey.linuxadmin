@@ -216,6 +216,16 @@ Check this folder in remote client:
 To download:
   $ scp -r user1@ipaddress:/home/user1/remotefile ./downloadlocationinLocal
 
+### Processes
+
+To liist all process:
+
+  $ ps
+
+Processes have states: R, S, D, Z. Only one process can run ata a time on a single CPU. SO any other process needs to wait. 
+
+![processstates]()
+
 To kill process, get pid and:
 
   $ sudo kill <process_id>
@@ -231,3 +241,7 @@ To bring the application to the foreground:
 The %2 means job ide number which can be obtained by running 'jobs'
 
 ![nuhup](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/nuhup.png?raw=true)
+
+![nuhup](https://pbs.twimg.com/media/F9QIUoLXoAAXwEZ?format=jpg&name=small)
+
+
