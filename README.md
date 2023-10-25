@@ -249,5 +249,15 @@ Signals: to puase or cancel a process
 64 signals, but only 5 commonly used: 1, 2, 3, 9, 15
 
 ![64signals](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/kill-l.png?raw=true)
+  $ kill -1 <process_id>
+
+Replace the number 1 with any other sig number as bewlo for that particular command:
+
+sighup(1): If you want to stop a process and ensure it restarts with the same process id, use :
+sigint(2): gets sent when you do control C (weakest sig kill)
+sigquit(3): kills procvess and does a core dump memory to a file. occurs with control blackslash
+sigkill(9): absolute kill, force kills a process 
+sigterm(15): default when other flags arent specified (kill -)
+
 
 
