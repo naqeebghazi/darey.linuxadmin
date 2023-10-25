@@ -230,4 +230,4 @@ To bring the application to the foreground:
 
 The %2 means job ide number which can be obtained by running 'jobs'
 
-![nuhup]()
+![nuhup](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/nuhup.png?raw=true)
