@@ -190,7 +190,7 @@ Then once you have sftp'd into the remote server, navigate to the folder you cre
   $ sudo chown user1:admin /var/www/html/directoryname
   $ put -r directoryname
 
-This will upload all the files.
+This will upload all the files as ong as the same directory name is present on the remote host. 
 
 ### To Download
 
