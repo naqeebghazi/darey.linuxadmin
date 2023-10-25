@@ -2,6 +2,21 @@
 
 # Navigating the Linux Terminal
 
+The root directory is at the location:
+
+$ cd /
+
+A user's home directory is at location:
+
+$ cd ~
+
+The folders in the root folder:
+
+/boot : stores data relating to booting up the system
+/dev : location of device file - these act as an interface between the computer and the device driver (e.g. a USB drive)
+/etc : configuration files of programs
+/home : user specific files and folders
+
 To see the structure of a directory, install the *tree* program:
 
   $ sudo apt install tree
