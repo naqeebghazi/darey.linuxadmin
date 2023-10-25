@@ -215,4 +215,19 @@ Check this folder in remote client:
 
 To download:
   $ scp -r user1@ipaddress:/home/user1/remotefile ./downloadlocationinLocal
-  
+
+To kill process, get pid and:
+
+  $ sudo kill <process_id>
+
+Processes stop on if logged out or system is shut down. To ensure p[rocess runs continually, run 'nohup':
+
+  $ nohup firefox &
+
+To bring the application to the foreground:
+
+  $ fg %2
+
+The %2 means job ide number which can be obtained by running 'jobs'
+
+![nuhup]()
