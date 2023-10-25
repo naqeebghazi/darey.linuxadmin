@@ -202,10 +202,17 @@ Go to directory in remote host from local host:
 
 ### SCP
 
-Cannot run commands like in sftp. Run this in host:
+To upload:
+scp cannot run commands like in sftp. Run this in host to upload to a remote host:
 
-  $ scp -r directoryname/ user1@ipaddress:tmp 
+  $ scp -r directoryname/ user1@ipaddress:/home/user1/uploadfiles 
+
+/tmp tells us where the contents of directoryname should be uploaded. 
 
 Check this folder in remote client:
 
   $ ls -al /tmp/directoryname
+
+To download:
+  $ scp -r user1@ipaddress:/home/user1/remotefile ./downloadlocationinLocal
+  
