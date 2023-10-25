@@ -222,9 +222,11 @@ To liist all process:
 
   $ ps
 
+![ps-l](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/ps-l.png?raw=true)
+
 Processes have states: R, S, D, Z. Only one process can run ata a time on a single CPU. SO any other process needs to wait. 
 
-![processstates]()
+![processstates](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/processStates.png?raw=true)
 
 To kill process, get pid and:
 
@@ -242,6 +244,10 @@ The %2 means job ide number which can be obtained by running 'jobs'
 
 ![nuhup](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/nuhup.png?raw=true)
 
-![nuhup](https://pbs.twimg.com/media/F9QIUoLXoAAXwEZ?format=jpg&name=small)
+Signals: to puase or cancel a process
+
+64 signals, but only 5 commonly used: 1, 2, 3, 9, 15
+
+![64signals](https://github.com/naqeebghazi/darey.linuxadmin/blob/main/images/kill-l.png?raw=true)
 
 
