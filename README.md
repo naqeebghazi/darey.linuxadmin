@@ -194,8 +194,6 @@ This will be the destination for files from other clients. You also need to know
 
     $ hostname -i
 
-![hostnameIP]()  
-
 On the local client:
 
     $ sftp user1@ipaddress-of-remote
